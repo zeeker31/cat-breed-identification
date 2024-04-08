@@ -1,0 +1,92 @@
+const questions = [
+  {
+    question: "What type of fur does a Persian cat have?",
+    answers: {
+      a: "Short and sleek",
+      b: "Long and flowing",
+      c: "Curly and wiry"
+    },
+    correctAnswer: "b"
+  },
+{
+    question: "What breed is known for its distinctive pointed markings on its fur?",
+    answers: {
+      a: "Maine Coon",
+      b: "Siamese",
+      c: "Domestic Shorthair"
+    },
+    correctAnswer: "b"
+  },
+{
+  question: "What breed is known for its short, muscular build and friendly nature?",
+  answers: {
+    a: "American Shorthair",
+    b: "Siamese",
+    c: "Bengal"
+  },
+correctAnswer: "a"
+}
+
+{
+  question: "Which breed is known for its intelligence and playful personality?",
+  answers: {
+    a: "Domestic Shorthair",
+    b: "Bengal",
+    c: "Maine Coon"
+  },
+  correctAnswer: "b"
+},
+
+{
+  question: "What breed is known for its large size and distinctive tufted ears?",
+  answers: {
+    a: "Siamese",
+    b: "Maine Coon",
+    c: "Persian"
+  },
+  correctAnswer: "b"
+},
+];
+let currentQuestionIndex = 0;
+
+// Function to display the quiz question and answer choices (assuming HTML elements exist)
+function displayQuestion() {
+  const questionElement = document.getElementById("question");
+  const answerElements = document.querySelectorAll(".answer");
+
+  questionElement.textContent = questions[currentQuestionIndex].question;
+
+  answerElements.forEach((answerElement, index) => {
+    const answerChoice = Object.keys(questions[currentQuestionIndex].answers)[index];
+    const answerText = questions[currentQuestionIndex].answers[answerChoice];
+    answerElement.textContent = `${answerChoice}: ${answerText}`;
+  });
+}
+
+// Function to handle user's answer selection (basic example)
+function handleAnswerSelection(event) {
+  const selectedAnswer = event.target.value;
+  const correctAnswer = questions[currentQuestionIndex].correctAnswer;
+
+  // Simple check to show an alert (more logic can be added)
+  if (selectedAnswer === correctAnswer) {
+    alert("Correct!");
+  } else {
+    alert("Incorrect. The correct answer is " + correctAnswer);
+  }
+
+  // Move to the next question (logic can be improved)
+  currentQuestionIndex++;
+  if (currentQuestionIndex < questions.length) {
+    displayQuestion();
+  } else {
+    alert("You've finished the quiz!");
+  }
+}
+
+// Display the first question on page load
+displayQuestion();
+
+// Add event listeners to answer buttons (assuming you have them in your HTML with a class like "answer-button")
+const answerButtons = document.querySelectorAll(".answer-button");
+answerButtons.forEach(button => button.addEventListener("click", handleAnswerSelection));

@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.breeds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.breed {
+  width: calc(33% - 20px); /* Adjust for spacing between breeds */
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.breed h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.breed img {
+  width: 100%;
+  display: block;
+  object-fit: cover; /* Ensures image fills container */
+}
