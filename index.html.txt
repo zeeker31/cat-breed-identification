@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cat Breed Identifier</title>
+    <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>  </head>  </head>
+<body>
+<h1>Welcome to the Cat Breed Identifier!</h1>
+<p>This website helps you identify different cat breeds based on their characteristics.</p>
+
+<h2>Our Featured Cat Breeds</h2>
+<div class="breeds">
+<div class="breed">
+    <h3>Domestic Shorthair</h3>
+    <img src="domestic.jpg" alt="Image of Domestic Shorthair Cat">
+    <p>The Domestic Shorthair is a popular breed known for its friendly personality and low-maintenance coat.
+ They come in a wide variety of colors and patterns.</p>
+  </div>
+ <div class="breed">
+    <h3>Persian</h3>
+    <img src="persian.jpg" alt="Image of Persian Cat">
+    <p>Persians are famous for their long, flowing fur and gentle demeanor. 
+They require regular grooming but are known for their affectionate and indoor-friendly nature.</p>
+  </div>
+<div class="breed">
+    <h3>Maine Coon</h3>
+    <img src="mainecoon.jpg" alt="Image of Maine Coon Cat">
+    <p>The Maine Coon is a gentle giant known for its large size, fluffy coat, and distinctive tufted ears.
+ They are intelligent and playful cats that can be quite vocal.</p>
+  </div>
+ <div class="breed">
+    <h3>Bengal</h3>
+    <img src="bengal.jpg" alt="Image of Bengal Cat">
+    <p>Bengals are known for their spotted coats and energetic personalities.
+ They are intelligent and curious cats that require plenty of stimulation and playtime.</p>
+  </div>
+  <div class="breed">
+    <h3>Siamese</h3>
+    <img src="siamese.jpg" alt="Image of Siamese Cat">
+    <p>Siamese cats are known for their distinctive pointed markings,
+ bright blue eyes, and talkative nature. They are social and intelligent cats that thrive on attention.</p>
+  </div>
+  </div>
+
+    </body>
+</html>
+
+
+
+
+
